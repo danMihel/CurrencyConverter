@@ -4,10 +4,10 @@
     <p class="fs-5" id="baseValue">1 {{ currencyInput }} = {{ rate }} {{ currencyOutput }}</p>
     <div class="row flex-md-row flex-column">
       <div class="col">
-        <button class="btn btn-light m-1" name="usd" id="usd" @click="currentInput('RUB')">RUB</button>
-        <button class="btn btn-light m-1" name="usd" id="usd" @click="currentInput('USD')">USD</button>
-        <button class="btn btn-light m-1" name="usd" id="usd" @click="currentInput('EUR')">EUR</button>
-        <button class="btn btn-light m-1" name="usd" id="usd" @click="currentInput('GBP')">GBP</button>
+        <button class="btn btn-light m-1" name="usd" id="RUB" @click="currentInput('RUB')">RUB</button>
+        <button class="btn btn-light m-1" name="usd" id="USD" @click="currentInput('USD')">USD</button>
+        <button class="btn btn-light m-1" name="usd" id="EUR" @click="currentInput('EUR')">EUR</button>
+        <button class="btn btn-light m-1" name="usd" id="GBP" @click="currentInput('GBP')">GBP</button>
         <select class="form-select text-center" name="first-currency" id="first-currency" @change="calculateResults()"
           value="" v-model="currencyInput">
           <option value="AED">AED</option>
@@ -74,10 +74,10 @@
         </svg>
       </div>
       <div class="col">
-        <button class="btn btn-light m-1" name="usd" id="usd" @click="currentOutput('RUB')">RUB</button>
-        <button class="btn btn-light m-1" name="usd" id="usd" @click="currentOutput('USD')">USD</button>
-        <button class="btn btn-light m-1" name="usd" id="usd" @click="currentOutput('EUR')">EUR</button>
-        <button class="btn btn-light m-1" name="usd" id="usd" @click="currentOutput('GBP')">GBP</button>
+        <button class="btn btn-light m-1" name="usd" id="RUB2" @click="currentOutput('RUB')">RUB</button>
+        <button class="btn btn-light m-1" name="usd" id="USD2" @click="currentOutput('USD')">USD</button>
+        <button class="btn btn-light m-1" name="usd" id="EUR2" @click="currentOutput('EUR')">EUR</button>
+        <button class="btn btn-light m-1" name="usd" id="GBP2" @click="currentOutput('GBP')">GBP</button>
         <select id="currency-two" class="form-select text-center" @change="calculateResults()" v-model="currencyOutput">
           <option value="AED">AED</option>
           <option value="ARS">ARS</option>
