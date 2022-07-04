@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <h1 class="text-center py-2">Currency conversion</h1>
     <p class="fs-5" id="baseValue">1 {{ currencyInput }} = {{ rate }} {{ currencyOutput }}</p>
-    <div class="row">
+    <div class="row flex-md-row flex-column">
       <div class="col">
         <button class="btn btn-light m-1" name="usd" id="usd" @click="currentInput('RUB')">RUB</button>
         <button class="btn btn-light m-1" name="usd" id="usd" @click="currentInput('USD')">USD</button>
@@ -66,7 +66,7 @@
         <input type="number" name="input-one" id="input-one" class="fs-3 p-5 form-control" v-model="amountOne"
           @input="calculateResults()" />
       </div>
-      <div class="col d-flex justify-content-center align-items-center">
+      <div class="col d-flex justify-content-center align-items-center py-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
           class="bi bi-arrow-left-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
